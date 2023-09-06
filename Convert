@@ -1,0 +1,9 @@
+from pydub import AudioSegment
+
+# Wczytaj plik MP3
+mp3_file = AudioSegment.from_mp3("twoj_plik.mp3")
+
+# Konwertuj na MPC
+mpc_file = mp3_file.export("wynikowy_plik.mpc", format="mpc")
+
+print("Konwersja zakończona pomyślnie.")
